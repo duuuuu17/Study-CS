@@ -1,2 +1,2 @@
-# Hello-World
+# CS history
 new cs student
