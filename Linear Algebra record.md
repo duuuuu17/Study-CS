@@ -8,7 +8,7 @@ The document's content is import of some theory that has some real means in the 
 
 ### 基本含义：
 
-向量相当于为
+向量相当于为</br>
 $$
 \vec{x}= \begin{array}
 {|c|}
