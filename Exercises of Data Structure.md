@@ -14,7 +14,7 @@ typedef struct link_table{
 
 ### 初始化
 
-```c++
+```
 void init_lt(head &L){//该初始化会构建一个头结点
 	L = new linktable;
     L->next = NULL;
@@ -41,10 +41,10 @@ head->next = head//将新结点移至头结点后，称为新的首元结点
 
 #### 尾插法：
 
-```c++
+```C++
 tail; //链表的尾结点地址
 tail->next = n->next;//先将新节点的前驱赋为原链表的尾结点
-n->next = NULL//将新结点的后继变为尾结点，即为空NULL
+n->next = ^//将新结点的后继变为尾结点，即为空^
 ```
 
 ### 树
@@ -89,9 +89,41 @@ void  push_layer_LRD(BTS_root root) {
 
 邻接矩阵
 $$
-(G,E) = \array{|1,2,3,4,5,6|}
+(G,E) =\left[ \begin{array}{ccc} 
+1 &2 &3\\
+2 \\
+3
+\end{array} \right] 以G_v顶点为下标的邻接矩阵，若顶点间有邻边，则其元素为1
 $$
-深度优先DFS:
+邻接表
+$$
+(G,E)=
+\left[\begin{array}{c}
+1\\
+2\\
+3\\
+\vdots\\
+n
+\end{array}
+\right]
+\begin{array}{c}
+\rightarrow\\
+\rightarrow\\
+\rightarrow\\
+\rightarrow\\
+\rightarrow
+\end{array}
+\begin{array}{c}
+[2,3,4\ldots]\\
+[3,1\ldots]\\
+[6\ldots]\\ 
+\vdots\\
+[n\ldots]
+\end{array}
+即邻接表是二维的matrix_{n\times n},它的下标就为对应的顶点，而它所属的一维的sub\_martix_{1\times n},保存邻居顶点
+$$
+
+#### 深度优先DFS:
 
 即从某一节点，访问邻居顶点，（已访问的顶点无法被访问，即无法重复进入顶点序列）然后根据邻居顶点再访问下一顶点，当无可访问邻居顶点时，返回至这一深度遍历顶点序列的初始顶点，然后访问其下一个邻居，依次反复，直至所有顶点被包含就停止。、
 
@@ -121,7 +153,7 @@ def DFS_digraph(self,start_node):
             self.DFS_digraph(adj_table[start_node][i]-1)
 ```
 
-广度优先BFS：
+#### 广度优先BFS：
 
 类似于树的层次遍历，利用一个顶点是否可访问的列表，从而控制输出顶点访问序列。由于是广度的，所以它是类似于层次性输出。
 
