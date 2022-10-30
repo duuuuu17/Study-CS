@@ -1,5 +1,3 @@
-# Exercise of Data Structure
-
 # Struct Data
 
 ## First：链表
@@ -11,13 +9,13 @@
 typedef struct link_table{
     elemtype data;
     link_table * next;
-}link_table, *link_l
+}link_table, *head
 ```
 
 ### 初始化
 
-```
-void init_lt(link_l &L){//该初始化会构建一个头结点
+```c++
+void init_lt(head &L){//该初始化会构建一个头结点
 	L = new linktable;
     L->next = NULL;
 }
@@ -25,11 +23,31 @@ void init_lt(link_l &L){//该初始化会构建一个头结点
 
 ### 链表元素的插入
 
+因为是链表所以会使用指针
+
+先声明一个新节点 ,并返回该新节点地址
+```c++
+link_table *n= new link_table; 
+```
+#### 前插法:
+
+```c++
+head; //链表的头结点地址
+n->next = head->next;//先将新节点的后继赋为原链表的首元结点
+head->next = head//将新结点移至头结点后，称为新的首元结点
 ```
 
+
+
+#### 尾插法：
+
+```c++
+tail; //链表的尾结点地址
+tail->next = n->next;//先将新节点的前驱赋为原链表的尾结点
+n->next = ^//将新结点的后继变为尾结点，即为空^
 ```
 
-## 树
+### 树
 
 ##### 二叉树层序遍历
 
