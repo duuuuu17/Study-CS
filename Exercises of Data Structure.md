@@ -88,6 +88,7 @@ void  push_layer_LRD(BTS_root root) {
 无向图和有向图的区别在于构建的是邻接矩阵还是邻接表
 
 邻接矩阵
+
 $$
 (G,E) =\left[ \begin{array}{ccc} 
 1 &2 &3\\
@@ -95,7 +96,9 @@ $$
 3
 \end{array} \right] 以G_v顶点为下标的邻接矩阵，若顶点间有邻边，则其元素为1
 $$
+
 邻接表
+
 $$
 (G,E)=
 \left[\begin{array}{c}
@@ -120,7 +123,7 @@ n
 \vdots\\
 [n\ldots]
 \end{array}
-即邻接表是二维的matrix_{n\times n},它的下标就为对应的顶点，而它所属的一维的sub\_martix_{1\times n},保存邻居顶点
+即邻接表是二维的matrix_{n\times n},它的下标就为对应的顶点，而它所属的一维的sub\\_ martix_{1\times n},保存邻居顶点
 $$
 
 #### 深度优先DFS:
