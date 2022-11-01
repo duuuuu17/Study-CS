@@ -125,6 +125,6 @@ $$
 
 空间理解
 
-<img src=".\picture\二阶行列式.png" alt="image-20221030234944338" style="zoom:60%;" />
+<img src=".\picture\二阶行列式.png" alt="image-20221030234944338" style="zoom:40%;" />
 
   
