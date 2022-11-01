@@ -8,7 +8,7 @@ The document's content is import of some theory that has some real means in the 
 
 ### 基本含义：
 
-向量相当于为</br>
+向量相当于为
 
 $$
 \vec{x}= \begin{array}
@@ -80,16 +80,51 @@ $$
 变换：指向量通过线性运算后，是保持网格平行等距变换：即直线在变换后仍为直线，其向量空间的原点也不会改变。当记住变换后的基向量，那么求其变换后的向量可以根据其进行计算。
 
 $$
-\vec{x} _{out} = a  \vec{i} _{out} + b \vec{j} _{out}
+\vec{u}_{out} = a \vec{i}_{out} + b \vec{j}_{out}(in\ 2-dimensional\ speace)\\
+\left [\begin{array}{cc}
+i&j
+\end{array} \right]_{2\times2} (the\ matrix\ is\ composite\ of\ two\ basic\ verctor:ij )
 $$
 
 $$
-\vec{x}= \begin{bmatrix}
-a\\
-b
-\end{bmatrix}
+\vec{u}_{out} = a \vec{x}_{out} + b \vec{y}_{out}+ c\vec{z}_{out}(in\ 3-dimensional\ speace)\\
+\left [\begin{array}{ccc}
+x&y&z
+\end{array} \right]_{3\times3} (the\ matrix\ is\ composite\ of\ three\ basic\ verctor:xyz )
+ \\
 $$
 
-x变换后
-此时的i,j为变换后空间的“基向量”，而当把向量i,j组合成矩阵时，这个矩阵表示的是变换空间，任意向量与之相乘，所得到的是该向量变换后的值。
-当矩阵中向量成员线性相关，则在空间表示一条直线。
+在三维空间中，其线性变换类似于二维空间，也是基于基坐标的变换，从而得到在变换后空间中的坐标。
+
+### 行列式
+
+**其空间意义，向量经过线性变换后的空间形体，是其原组成面积（二维）或体积（三维）的定向倍数关系。**
+
+#### 注意
+
+当行列式
+$det(|n\times n|)=0$
+时，我们可知其原方阵不可逆，为奇异（非满秩）矩阵。
+
+**在空间上，表明原方阵可经过线性变换降维**
+
+“取向”：也叫翻转。"定向"：也叫改变，旋转向指定的方向。
+
+##### 二阶行列式中
+
+$$
+\det (\left[\begin{array}{cc} 
+a&b\\
+c&d
+\end{array}\right])
+$$
+
+
+
+其bc有一个为0时，其空间为平行四边形，故bc表示的是**ab所构成的四边形对角的拉伸程度**。
+
+空间理解
+
+<img src=".\图片\二阶行列式.png" alt="image-20221030234944338" style="zoom:80%;" />
+
+  
