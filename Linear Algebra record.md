@@ -83,14 +83,14 @@ $$
 \vec{u}_{out} = a \vec{i}_{out} + b \vec{j}_{out}(in\ 2-dimensional\ speace)\\
 \left [\begin{array}{cc}
 i&j
-\end{array} \right]_{2\times2} (the\ matrix\ is\ composite\ of\ two\ basic\ verctor:ij )
+\end{array} \right]_{2\times2}  (the\ matrix\ is\ composite\ of\ two\ basic\ verctor:ij )
 $$
 
 $$
 \vec{u}_{out} = a \vec{x}_{out} + b \vec{y}_{out}+ c\vec{z}_{out}(in\ 3-dimensional\ speace)\\
 \left [\begin{array}{ccc}
 x&y&z
-\end{array} \right]_{3\times3} (the\ matrix\ is\ composite\ of\ three\ basic\ verctor:xyz )
+\end{array} \right]_{3\times3}  (the\ matrix\ is\ composite\ of\ three\ basic\ verctor:xyz )
  \\
 $$
 
