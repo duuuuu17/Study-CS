@@ -1,1 +1,1 @@
-This is a directory about Linear Algebra
+This is a directory about Mathematics
